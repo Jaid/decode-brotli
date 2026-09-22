@@ -18,7 +18,12 @@
     "#root/*": "./*"
   },
   "scripts": {
-    "test": "bun test --max-concurrency 1 ./test"
+    "build": "build_lib --terser-strength aggressive --copyFiles docs/implementation.md --copyFiles docs/usage.md --copyFiles docs/licenses --copyFiles THIRD_PARTY_NOTICES.md",
+    "lint": "tsc --noEmit --noUnusedLocals --pretty false && eslint . --quiet",
+    "test": "bun test --max-concurrency 1 ./test",
+    "test:fuzz": "BROTLI_FUZZ_CASES=100000 bun test test/differential.test.ts",
+    "test:browser": "bun run build && bun scripts/check-browser.ts",
+    "validate": "bun run lint && bun run test && bun run build"
   },
   "devDependencies": {
     "eslint": "10.11.0",
@@ -26,5 +31,16 @@
     "tsconfig-jaid-bun": "16.0.0",
     "typescript": "npm:typescript-classic@6.0.4",
     "@types/bun": "1.4.2"
-  }
+  },
+  "description": "small but complete JavaScript-only Brotli decompressor",
+  "sideEffects": false,
+  "files": [
+    "src",
+    "docs/implementation.md",
+    "docs/usage.md",
+    "docs/licenses/brotli.txt",
+    "readme.md",
+    "license.txt",
+    "THIRD_PARTY_NOTICES.md"
+  ]
 }

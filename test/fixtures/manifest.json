@@ -1,0 +1,97 @@
+[
+  {
+    "file": "0000000000000000.empty.br",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "126d9a84a3d1b3ad.xyzzy.br",
+    "bytes": 6,
+    "sha256": "0b5540b9d3570436fc693741bce76035c6bc2c4220277df898b87f41983b244b"
+  },
+  {
+    "file": "1f39ef98802627d5.bref65536.br",
+    "bytes": 65792,
+    "sha256": "a6dbac2165542001c574fe1d5ed6ca646203660c228cac57b47a9fec68c20217"
+  },
+  {
+    "file": "24b2c7600b8207e2.random.br",
+    "bytes": 66558,
+    "sha256": "249ae936f16321c09643ab705379938a41f0a927ebf89f2808acf434f22f0d78"
+  },
+  {
+    "file": "5b5eb8c2e54aa1c4.fox.br",
+    "bytes": 43,
+    "sha256": "d7a8fbb307d7809469ca9abcb0082e4f8d5651e46d3cdb762d02d0bf37c9e592"
+  },
+  {
+    "file": "5ea84b0ab2a9d2f3.ascii.br",
+    "bytes": 189,
+    "sha256": "15e1805a7b70f2e9889af3c73cc96951c860baacaeba129f43caaea780c917d4"
+  },
+  {
+    "file": "62652dac985a31f1.monkey.br",
+    "bytes": 843,
+    "sha256": "937ad127fe0e373e0e267d11905f2bca154f40fe6fd438b6ddcce40de2ddcd99"
+  },
+  {
+    "file": "68333cc8433f3ab8.16k_minus_one.br",
+    "bytes": 16383,
+    "sha256": "0efbb828883244abe857d44c305ad9fdf4868fd862ee43fe8f38dba0269a5632"
+  },
+  {
+    "file": "7da01857468c3de8.buffer_sized_chunks.br",
+    "bytes": 81920,
+    "sha256": "251ff5c1690b257d596bd8297ef3780b0855a56bf91104529e1e65a6b68e322a"
+  },
+  {
+    "file": "89988757bded53ae.x10y10.br",
+    "bytes": 20,
+    "sha256": "41bd4c895e9fb36d74bc97db5092872a24267e3b0455ff6152b0d262faa00d49"
+  },
+  {
+    "file": "940493692ce62466.E.coli.br",
+    "bytes": 4638690,
+    "sha256": "9125dfd87315961ef4286f3856098069e050cc3a2abe65735fe43e69d1996f40"
+  },
+  {
+    "file": "c3f720395238182c.world192.br",
+    "bytes": 2408281,
+    "sha256": "d4302d4443b4afc6b75a700b832d2485850f37b1710e9cc73f175c09ed26efd3"
+  },
+  {
+    "file": "c5a4246584d690a7.16k_plus_one.br",
+    "bytes": 16385,
+    "sha256": "0533e1401eb6e8e409ae0491c3316bd886e8fbbd15a085217fe885b7a56b7575"
+  },
+  {
+    "file": "c895e0c1b11448fa.ukkonooa.br",
+    "bytes": 119,
+    "sha256": "1fb2529b0c6fbf80a60d2bb4c20efba2fff6cecb0c52d42693d404501064f407"
+  },
+  {
+    "file": "d238c71341928567.allbytevalues_twice.br",
+    "bytes": 512,
+    "sha256": "110009dcee21620b166f3abfecb5eff7a873be729d1c2d53822e7acc5f34eb9b"
+  },
+  {
+    "file": "d38da8261aedc293.bible.br",
+    "bytes": 4351847,
+    "sha256": "d269f87ca2662d892a762246dd1162b5b1295f790f324464b8374299111e65d2"
+  },
+  {
+    "file": "d6a9c5da7ba30f21.allbytevalues_16k.br",
+    "bytes": 16384,
+    "sha256": "0b51d281e6f07efc61322e97fc678b3799c84f20d93fd9fccbf936e1776acf4f"
+  },
+  {
+    "file": "f121ac88218962d7.x.br",
+    "bytes": 1,
+    "sha256": "4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015"
+  },
+  {
+    "file": "f6083a8a3754518c.x64.br",
+    "bytes": 64,
+    "sha256": "be4d3ed1fc5f5cfa00735b28605a975f3293fa235d23abb1d9dea380fba0fb87"
+  }
+]
