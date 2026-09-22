@@ -1,0 +1,1 @@
+The decoding core, dictionary and synthetic tests are adapted from Google’s Brotli project. See [third-party notices](THIRD_PARTY_NOTICES.md) for provenance and attribution. The project’s own code is MIT licensed.
