@@ -1,7 +1,8 @@
 import {describe, expect, test} from 'bun:test'
 import {createHash} from 'node:crypto'
-import decodeBrotli from '../src/main.ts'
+
 import {data, offsets, sizeBits} from '../src/decoder/dictionary.ts'
+import decodeBrotli from '../src/main.ts'
 import manifest from './fixtures/manifest.json'
 import {concat, expectError} from './helpers.ts'
 
@@ -18,9 +19,8 @@ describe('upstream interoperability corpus', () => {
     })
   }
 })
-
 test('full RFC static dictionary, including non-ASCII entries', () => {
-  expect(data.length).toBe(122784)
+  expect(data.length).toBe(122_784)
   // SHA-256 of upstream c/common/dictionary.bin, not of our unpacking code.
   expect(createHash('sha256').update(data).digest('hex')).toBe('20e42eb1b511c21806d4d227d07e5dd06877d8ce7b3a817f378f313653f35c70')
   for (let length = 4; length <= 24; length++) {

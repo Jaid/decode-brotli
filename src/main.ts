@@ -25,7 +25,7 @@ export interface DecodeBrotliOptions {
  * @throws {RangeError} An invalid output limit or a runtime allocation failure.
  */
 export default function decodeBrotli(input: BrotliInput, options: DecodeBrotliOptions = {}): Uint8Array<ArrayBuffer> {
-  let bytes: Int8Array<ArrayBufferLike>
+  let bytes: Int8Array
   if (ArrayBuffer.isView(input)) {
     bytes = new Int8Array(input.buffer, input.byteOffset, input.byteLength)
   } else {

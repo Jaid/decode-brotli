@@ -1,5 +1,5 @@
 /** Stable categories for failures while decoding a Brotli stream. */
-export type BrotliErrorCode = 'INVALID_DATA' | 'UNEXPECTED_EOF' | 'TRAILING_DATA' | 'OUTPUT_LIMIT'
+export type BrotliErrorCode = 'INVALID_DATA' | 'OUTPUT_LIMIT' | 'TRAILING_DATA' | 'UNEXPECTED_EOF'
 
 /** Invalid input or a configured decompression limit was exceeded. */
 export class BrotliDecodeError extends Error {

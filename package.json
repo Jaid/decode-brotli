@@ -2,6 +2,7 @@
   "name": "decode-brotli",
   "version": "0.1.0",
   "type": "module",
+  "description": "small but complete JavaScript-only Brotli decompressor",
   "funding": "https://github.com/sponsors/Jaid",
   "license": "MIT",
   "repository": {
@@ -21,8 +22,8 @@
     "build": "build_lib --terser-strength aggressive --copyFiles docs/implementation.md --copyFiles docs/usage.md --copyFiles docs/licenses --copyFiles THIRD_PARTY_NOTICES.md",
     "lint": "tsc --noEmit --noUnusedLocals --pretty false && eslint . --quiet",
     "test": "bun test --max-concurrency 1 ./test",
-    "test:fuzz": "BROTLI_FUZZ_CASES=100000 bun test test/differential.test.ts",
     "test:browser": "bun run build && bun scripts/check-browser.ts",
+    "test:fuzz": "BROTLI_FUZZ_CASES=100000 bun test test/differential.test.ts",
     "validate": "bun run lint && bun run test && bun run build"
   },
   "devDependencies": {
@@ -32,8 +33,6 @@
     "typescript": "npm:typescript-classic@6.0.4",
     "@types/bun": "1.4.2"
   },
-  "description": "small but complete JavaScript-only Brotli decompressor",
-  "sideEffects": false,
   "files": [
     "src",
     "docs/implementation.md",
@@ -42,5 +41,6 @@
     "readme.md",
     "license.txt",
     "THIRD_PARTY_NOTICES.md"
-  ]
+  ],
+  "sideEffects": false
 }
