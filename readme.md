@@ -4,21 +4,13 @@
 
 small but complete JavaScript-only Brotli decompressor
 
-## intro
-
-Synchronous, ESM-only and dependency-free at runtime. Works in current browsers, Bun and Node.js without native codecs, WebAssembly, external dictionary files or network access.
-
 ## features
 
 - All RFC 7932 window sizes, compressed and uncompressed meta-blocks and metadata.
 - Simple and complex Huffman codes, block switching, context modeling, distance caches and overlapping history copies.
-- The complete 122 784-byte static dictionary and all 121 standard transforms, including non-ASCII entries.
+- The complete 122 784-byte static dictionary and all 121 standard transforms, including non-ASCII entries.
 - Strict single-stream decoding: truncated input, invalid codes, invalid padding and trailing bytes are rejected. Concatenated streams are not accepted.
 - An encoded empty stream returns an empty array. A zero-byte input is not an encoded stream.
-
-Streaming, encoding, nonstandard large-window Brotli and external/shared dictionary extensions are not included. A normal Brotli stream’s built-in static dictionary is always available.
-
-See [implementation notes](docs/implementation.md) for decoder provenance and maintenance details.
 
 ## installation
 
@@ -114,45 +106,11 @@ Brotli provides no built-in checksum. A changed bit can still describe a valid b
 
 ## legal
 
-The decoding core, dictionary and synthetic tests are adapted from Google’s Brotli project. See [third-party notices](THIRD_PARTY_NOTICES.md) for provenance and attribution. The project’s own code is MIT licensed.
+### Brotli
 
-## development
+adapted from Google’s [Brotli reference implementation](https://github.com/google/brotli)
 
-All fixtures needed by the regular tests are checked into the repository.
-
-Additional release validation:
-
-```sh
-bun run build
-bun run test:fuzz
-bun run test:browser
-```
-
-`test:fuzz` runs 100 000 deterministic differential cases against native Brotli. `test:browser` runs the aggressive production bundle in a current Chromium-family browser against all 19 upstream corpus vectors and error handling.
-
-`bun run build` produces the browser-compatible ESM package under `dist/decode-brotli/production/`, including `lib.js`, declarations, documentation and third-party notices.
-
-The native Brotli encoder/decoder is used only as an independent test oracle. The production build contains neither test fixtures nor development dependencies.
-
-### setting up
-
-```sh
-git clone git@github.com:Jaid/decode-brotli.git
-cd decode-brotli
-bun install
-```
-
-### linting
-
-```sh
-bun run lint
-```
-
-### testing
-
-```sh
-bun run test
-```
+Copyright © 2009, 2010, 2013-2016 by the Brotli Authors – [MIT](https://github.com/google/brotli/raw/HEAD/LICENSE)
 
 ## license
 
@@ -160,6 +118,6 @@ bun run test
 Copyright © 2026, Jaid \<jaid.jsx@gmail.com> (https://github.com/jaid)
 
 <!--
-readme generated with tldw v9.7.0 from ./docs and ./docs/tldw
+readme generated with tldw v9.7.0 from ./docs/tldw
 github.com/Jaid/tldw
 -->
